@@ -1,0 +1,120 @@
+@media (max-width:480px) {
+    .address {
+        display: none;
+        &__items {
+            display: none;
+        }
+        &__details {
+            display: none;
+        }
+    
+        &__link {}
+    }
+}
+
+@media (max-width:768px) {
+    .address {
+        &__items {}
+
+        &__details {
+            font-size: 12px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            line-height: 14px; 
+        }
+        &__details:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        &__link {
+            display: flex;
+            color: var(--grey-color);
+            fill: var(--grey-color);
+        }
+        &__link:focus,
+        &__link:hover {
+            color: var(--btn-color);
+            fill: var(--btn-color);
+        }
+        &__icon {
+            margin-right: 8px;
+        }
+    }
+}
+
+
+
+@media (min-width:769px) {
+    .address {
+        &__items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            right: 2vw;
+        }
+
+        &__details {
+            font-size: 14px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+        }
+
+        &__details:not(:last-child) {
+            margin-right: 2.5vw;
+        }
+
+        &__link {
+            color: var(--grey-color);
+            fill: var(--grey-color);
+            display: flex;
+            align-items: center;
+        }
+
+        &__link:focus,
+        &__link:hover {
+            color: var(--btn-color);
+            fill: var(--btn-color);
+        }
+        &__icon {
+            margin-right: 8px;
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    .address {
+        &__items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            right: 30px;
+        }
+
+        &__details {
+            font-size: 14px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            line-height: 16px;
+        }
+
+        &__details:not(:last-child) {
+            margin-right: 2.5vw;
+        }
+
+        &__link {
+            color: var(--grey-color);
+            fill: var(--grey-color);
+        }
+
+        &__link:focus,
+        &__link:hover {
+            color: var(--btn-color);
+            fill: var(--btn-color);
+        }
+    }
+}

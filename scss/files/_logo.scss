@@ -1,0 +1,48 @@
+.logo {
+    &__link {
+        font-style: normal;
+        font-weight: 700;
+    }
+    &__link--blue {
+        color: var(--btn-color);
+    }
+    &__link--black {
+        color: var(--black-grey-color);
+    }
+    
+    &__link--white {
+        color: var(--white-color);
+    }
+
+    @media (max-width:480px) {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 16px 0 16px 0;
+    }
+
+    @media (max-width:768px) {
+        font-size: 24px;
+        line-height: 28px;
+        padding: 26px 0 26px 0;
+    }
+
+    @media (min-width:769px) {
+        font-size: 26px;
+        line-height: 30.5px;
+        padding: 24px 0 25px 0;
+        margin-right: 93px;
+    }     
+}
+
+.logo--footer {
+    @media (max-width:480px) {
+        padding: 60px 0 20px 0;
+
+    }
+    @media (max-width:768px) {
+
+    }
+    @media (min-width:769px) {
+
+    }
+}

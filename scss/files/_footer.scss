@@ -1,0 +1,32 @@
+@import './footer-logo-addres';
+@import './footer-social';
+@import './sing-up';
+
+.footer__wrapper {
+    @media (max-width:480px)   {
+        text-align: center;
+    }
+    @media (min-width:481px) and (max-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    @media (min-width:769px) {
+        display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+    }
+}
+
+.footer {
+    &__item {
+        
+        @media (min-width:481px) and (max-width:768px) {
+            flex-basis: var(--tablet);
+            padding-top: 60px;  
+        }
+        @media (min-width:769px) {
+            flex-basis: var(--desktop);
+        }
+    }
+}

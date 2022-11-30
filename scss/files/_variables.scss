@@ -1,0 +1,21 @@
+:root {
+    // palette
+    --btn-color: #2196F3;
+    --btn-hover-color: #188CE8;
+    --black-color: #000000;
+    --black-grey-color: #212121;
+    --grey-color: #757575;
+    --white-color: #ffffff;
+    --fon-benefits-color: #F5F4FA;
+    --fon-section-color: #AFB1B8;
+    --activity-color: #2F303A;
+    --border-color: #ECECEC;
+    --customers-border-color: #AFB1B8;
+    --border-portfolio-color:#EEEEEE;
+
+    // devices
+    --mobile: calc(100% - 2 * 15px);
+    --tablet: calc(100% / 2 - 2 * 15px);
+    --desktop: calc(100% / 4 - 2 * 15px);
+}
+

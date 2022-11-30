@@ -1,0 +1,72 @@
+.benefits {
+    &__cards {
+        @media (max-width:480px) {
+            display: block;
+        }
+        @media (max-width:768px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        @media (min-width:769px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+    }
+    &__card {
+        @media (max-width: 480px) {
+            flex-basis: calc((100% - 30px)/1);
+        }
+        @media (max-width: 768px) {
+            padding-bottom: 30px;
+            flex-basis: calc((100% - 90px)/2);
+        }
+        @media (min-width:769px) {
+            flex-basis: calc((100% - 90px)/4);
+        }
+    }
+    &__figura {
+        height: 120px;
+        background-color: var(--fon-benefits-color);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @media (max-width: 480px) {
+            max-width: 450px;
+        }
+        @media (max-width: 768px) {
+            max-width: 354px;
+        }
+        @media (min-width:769px) {
+            max-width: 270px;
+        }
+    }
+
+    &__icon {
+        display: flax;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 16px;
+        color: var(--black-grey-color);
+        padding: 30px 0 10px 0;
+        @media (max-width:480px) {
+            text-align: center;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+        color: var(--grey-color);
+    }
+
+}
+

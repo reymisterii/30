@@ -1,0 +1,55 @@
+@import './logo';
+@import './nav';
+
+.header {
+    border-bottom: 1px solid var(--border-color);
+    @media (max-width:480px) {
+    &__items {
+        max-width: 480px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {}
+    &__item-logo {}
+    &__item-nav {
+    
+    }
+    &__item-address {
+        display: none;
+    }
+    }
+        
+    @media (max-width:768px) {
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item {}
+    }
+
+    @media (max-width:1200px) {
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    &__item {
+        }
+    }
+
+    @media (min-width:1201px) {
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    &__item {
+        }
+    } 
+}
+
+

@@ -1,0 +1,31 @@
+.footer {
+    background-color: var(--activity-color);
+
+    &__address {}
+
+    &__address-items {
+        padding: 35px 0 0 0;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        line-height: 24px;
+    }
+
+    &__address-item {}
+
+    &__address-item:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    &__address-item--white {
+        color: var(--white-color);
+    }
+
+    &__address-link {
+        color: var(--white-color);
+        opacity: 0.6;
+    }
+
+    &__item {}
+}

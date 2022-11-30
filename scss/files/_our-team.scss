@@ -1,0 +1,85 @@
+.team {
+    background-color: var(--fon-benefits-color);
+    &__cards {
+        @media (min-width:481px) {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        } 
+    }
+    &__card {
+        max-width: 450px;
+        border-radius: 0 0 4px 4px;
+        background-color: var(--white-color);
+        margin-bottom: 30px;
+        box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2),
+                    0 1px 1px rgba(0, 0, 0, 0.14),
+                    0 1px 3px rgba(0, 0, 0, 0.12);
+        @media (max-width:480px) {
+            flex-basis: var(--mobile);
+        }
+        @media (max-width:768px) {
+            flex-basis: var(--tablet);
+        }
+        @media (min-width:769px) {
+            flex-basis: var(--desktop);
+        }
+    }
+    &__img{
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+    &__name {
+        font-size: 16px;
+        font-weight: 500;
+        font-style: 'Roboto';
+        line-height: normal;
+        font-family: 19px;
+        text-align: center;
+        color: var(--black-grey-color);
+        margin-top: 30px;
+    }
+    &__profetion {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Roboto' sans-serif;
+        font-style: normal;
+        line-height: 19px;
+        text-align: center;
+        color: var(--grey-color);
+        margin-top: 10px;
+    }
+    &__social {
+        margin-top: 16px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__soc {
+        
+    }
+    &__soc:not(:last-child) {
+        margin-right: 10px;
+    }
+    &__link {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        fill: var(--fon-section-color);
+    }
+    &__link:hover,
+    &__link:focus {
+        fill: var(--white-color);
+        background-color: var(--btn-color);
+    }
+    &__icon {
+
+    }
+}

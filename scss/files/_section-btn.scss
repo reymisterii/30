@@ -1,0 +1,50 @@
+.section-btn {
+    &__title {
+
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        @media (min-width:480px) {
+            justify-items: center;
+        }
+    }
+    &__item {
+        @media (max-width:480px) {
+            margin-bottom: 16px;
+    
+            &:nth-child(4) {
+                margin-bottom: 0;
+            }
+    
+            &:nth-child(5) {
+                margin-bottom: 0;
+            }
+    }
+    &__item:not(:last-child) {
+        margin-right: 8px;
+        }
+    }
+    &__button {
+        font-family: 'Roboto' sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        font-style: normal;
+        padding: 6px 21px;
+        color: var(--black-color);
+        background-color: var(--fon-benefits-color);
+        border-radius: 4px;
+        &:focus,
+        &:hover {
+            color: var(--white-color);
+            background-color: var(--btn-color);
+        }
+    }
+    
+}
+

@@ -1,0 +1,35 @@
+.footer {
+    &__sing-up {
+        color: var(--white-color);
+        @media (min-width:481px) and (max-width:768px) {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &__form {
+        padding: 0 0 60px 0;
+    }
+    &__label {
+        display: grid;
+        
+        
+    }
+
+    &__input {
+        max-width: 450px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background-color: var(--activity-color);
+
+        margin: 20px 0 20px 0;
+    }
+    &__input::placeholder {
+        color: var(--white-color);
+        opacity: 0.6;
+    }
+    &__input:valid {
+        color: var(--white-color);
+        padding-left: 16px;
+    }
+}
