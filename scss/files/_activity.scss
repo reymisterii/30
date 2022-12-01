@@ -30,8 +30,22 @@
             height: 294px;
         }
 
-        &__box {}
+        &__box {
+            width: 370px;
+            height: 70px;
+            background-color: rgba(47, 48, 58, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            top: -70px;
+        }
 
-        &__text {}
+        &__text {
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 16px;
+            color: var(--white-color);
+        }
     }
 }

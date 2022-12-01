@@ -1,7 +1,11 @@
 .footer {
     background-color: var(--activity-color);
 
-    &__address {}
+    &__address {
+        @media (min-width:769px) {
+            margin-right: -93px;
+        }
+    }
 
     &__address-items {
         padding: 35px 0 0 0;

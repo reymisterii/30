@@ -10,8 +10,9 @@
         align-items: center;
         margin-top: 60px;
         margin-bottom: 30px;
-        @media (min-width:480px) {
-            justify-items: center;
+        gap: 8px;
+        @media (min-width:481px) {
+            justify-content: center;
         }
     }
     &__item {

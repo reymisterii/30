@@ -31,3 +31,10 @@
     &__icon {}
 }
 
+.button--position {
+    @media (min-width:1200px) {
+        position: relative;
+        top: 36px;
+    }
+}
+

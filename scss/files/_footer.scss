@@ -13,14 +13,18 @@
     }
     @media (min-width:769px) {
         display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
+        align-items: baseline;
+        justify-content: space-between;
+        padding-top: 35px;
+        padding-bottom: 35px;
     }
 }
 
 .footer {
     &__item {
-        
+        @media (max-width:480px) {
+                padding-top: 60px;
+            }
         @media (min-width:481px) and (max-width:768px) {
             flex-basis: var(--tablet);
             padding-top: 60px;  

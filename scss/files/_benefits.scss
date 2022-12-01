@@ -3,10 +3,11 @@
         @media (max-width:480px) {
             display: block;
         }
-        @media (max-width:768px) {
+        @media (min-width: 481px) and (max-width:768px) {
             display: flex;
             flex-wrap: wrap;
             gap: 30px;
+            justify-content: center;
         }
         @media (min-width:769px) {
             display: flex;
@@ -18,7 +19,7 @@
         @media (max-width: 480px) {
             flex-basis: calc((100% - 30px)/1);
         }
-        @media (max-width: 768px) {
+        @media (min-width: 481px) and (max-width: 768px) {
             padding-bottom: 30px;
             flex-basis: calc((100% - 90px)/2);
         }
@@ -36,7 +37,7 @@
         @media (max-width: 480px) {
             max-width: 450px;
         }
-        @media (max-width: 768px) {
+        @media (min-width: 481px) and (max-width: 768px) {
             max-width: 354px;
         }
         @media (min-width:769px) {
@@ -67,6 +68,5 @@
         line-height: 24px;
         color: var(--grey-color);
     }
-
 }
 
