@@ -10,6 +10,11 @@
                           url(../images/Header-mobail.jpg);
         background-size: cover;
         padding: 118px 0;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/Header-mobail2x.jpg);
+            }
         
     }
     
@@ -22,6 +27,11 @@
                           url(../images/Header-tablet.jpg);
         background-size: cover;
         padding: 118px 0;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/Header-tablet2x.jpg);
+            }
     }
     @media (min-width:769px) {
         max-width: 1600px;
@@ -34,6 +44,11 @@
                           url(../images/Header-desktop.jpg);
         background-size: cover;
         padding: 200px 0;
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../../images/Header-desktop2x.jpg);
+            }
     }
     &__title {
         font-family: "Roboto";

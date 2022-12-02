@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en, ru">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -35,12 +35,14 @@
               </button>
               <ul class="nav__items">
                 <li class="nav__item">
-                  <a href="./index.html" class="nav__link"
-                    >Студия</a
-                  >
+                  <a href="./index.html" class="nav__link">Студия</a>
                 </li>
                 <li class="nav__item">
-                  <a href="./portfolio.html" class="nav__link nav__link--activ-next">Портфолио</a>
+                  <a
+                    href="./portfolio.html"
+                    class="nav__link nav__link--activ-next"
+                    >Портфолио</a
+                  >
                 </li>
                 <li class="nav__item">
                   <a href="#" class="nav__link">Контакты</a>
@@ -138,12 +140,16 @@
           </h2>
           <ul class="section-btn__items">
             <li class="section-btn__item">
-              <button type="button" value="Все" class="section-btn__button" >
+              <button type="button" value="Все" class="section-btn__button">
                 Все
               </button>
             </li>
             <li class="section-btn__item">
-              <button type="button" value="Веб-сайты" class="section-btn__button">
+              <button
+                type="button"
+                value="Веб-сайты"
+                class="section-btn__button"
+              >
                 Веб-сайты
               </button>
             </li>
@@ -162,7 +168,11 @@
               </button>
             </li>
             <li class="section-btn__item">
-              <button type="button" value="Маркетинг" class="section-btn__button">
+              <button
+                type="button"
+                value="Маркетинг"
+                class="section-btn__button"
+              >
                 Маркетинг
               </button>
             </li>
@@ -174,9 +184,9 @@
           <h2 class="portfolio__title visually-hidden">
             Наши работы и гордость. Слава Украине!
           </h2>
-          <ul class="portfolio__cards">
-            <li class="portfolio__card">
-              <a href="" class="portfolio__link">
+          <ul class="portfolio-cards">
+            <li class="portfolio-card">
+              <a href="#" class="portfolio-card__img">
                 <div class="box">
                   <div class="overlay">
                     <p>
@@ -186,16 +196,31 @@
                       лице.
                     </p>
                   </div>
-                  <img src="./images/x1/portfolio1.jpg" alt="зображення" class="portfolio__img" />
+                  <img
+                    srcset="
+                      ./images/x1/portfolio1.jpg   450w,
+                      ./images/x2/portfolio1x2.jpg 900w,
+                      ./images/x1/portfolio1.jpg   354w,
+                      ./images/x2/portfolio1x2.jpg 708w,
+                      ./images/x1/portfolio1.jpg   270w,
+                      ./images/x2/portfolio1x2.jpg 540w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    class="card-image"
+                    src="./images/x1/portfolio1.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <div class="portfolio__item">
-                  <h3 class="portfolio__title">Технокряк</h3>
-                  <p class="portfolio__text">Веб-сайт</p>
+                <div class="item-list">
+                  <h2>Технокряк</h2>
+                  <p>Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__card">
-              <a href="" class="portfolio__link">
+            <li class="portfolio-card">
+              <a href="#" class="portfolio-card__img">
                 <div class="box">
                   <div class="overlay">
                     <p>
@@ -205,18 +230,31 @@
                       лице.
                     </p>
                   </div>
-                  <img src="./images/x1/portfolio2.jpg" alt="зображення" class="portfolio__img" />
+                  <img
+                    srcset="
+                      ./images/x1/portfolio2.jpg   450w,
+                      ./images/x2/portfolio2x2.jpg 900w,
+                      ./images/x1/portfolio2.jpg   354w,
+                      ./images/x2/portfolio2x2.jpg 708w,
+                      ./images/x1/portfolio2.jpg   270w,
+                      ./images/x2/portfolio2x2.jpg 540w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    class="card-image"
+                    src="./images/x1/portfolio2.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <div class="portfolio__item">
-                  <h3 class="portfolio__title">
-                    Постер New Orlean vs Golden Star
-                  </h3>
-                  <p class="portfolio__text">Дизайн</p>
+                <div class="item-list">
+                  <h2>Постер New Orlean vs Golden Star</h2>
+                  <p>Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__card">
-              <a href="" class="portfolio__link">
+            <li class="portfolio-card">
+              <a href="#" class="portfolio-card__img">
                 <div class="box">
                   <div class="overlay">
                     <p>
@@ -226,16 +264,31 @@
                       лице.
                     </p>
                   </div>
-                  <img src="./images/x1/portfolio3.jpg" alt="зображення" class="portfolio__img" />
+                  <img
+                    srcset="
+                      ./images/x1/portfolio3.jpg   450w,
+                      ./images/x2/portfolio3x2.jpg 900w,
+                      ./images/x1/portfolio3.jpg   354w,
+                      ./images/x2/portfolio3x2.jpg 708w,
+                      ./images/x1/portfolio3.jpg   270w,
+                      ./images/x2/portfolio3x2.jpg 540w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    class="card-image"
+                    src="./images/x1/portfolio3.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <div class="portfolio__item">
-                  <h3 class="portfolio__title">Ресторан Seafood</h3>
-                  <p class="portfolio__text">Приложение</p>
+                <div class="item-list">
+                  <h2>Ресторан Seafood</h2>
+                  <p>Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__card">
-              <a href="" class="portfolio__link">
+            <li class="portfolio-card">
+              <a href="#" class="portfolio-card__img">
                 <div class="box">
                   <div class="overlay">
                     <p>
@@ -245,16 +298,31 @@
                       лице.
                     </p>
                   </div>
-                  <img src="./images/x1/portfolio4.jpg" alt="зображення" class="portfolio__img" />
+                  <img
+                    srcset="
+                      ./images/x1/portfolio4.jpg   450w,
+                      ./images/x2/portfolio4x2.jpg 900w,
+                      ./images/x1/portfolio4.jpg   354w,
+                      ./images/x2/portfolio4x2.jpg 708w,
+                      ./images/x1/portfolio4.jpg   270w,
+                      ./images/x2/portfolio4x2.jpg 540w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    class="card-image"
+                    src="./images/x1/portfolio4.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <div class="portfolio__item">
-                  <h3 class="portfolio__title">Проект Prime</h3>
-                  <p class="portfolio__text">Маркетинг</p>
+                <div class="item-list">
+                  <h2>Проект Prime</h2>
+                  <p>Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__card">
-              <a href="" class="portfolio__link">
+            <li class="portfolio-card">
+              <a href="#" class="portfolio-card__img">
                 <div class="box">
                   <div class="overlay">
                     <p>
@@ -264,16 +332,31 @@
                       лице.
                     </p>
                   </div>
-                  <img src="./images/x1/portfolio5.jpg" alt="зображення" class="portfolio__img" />
+                  <img
+                    srcset="
+                      ./images/x1/portfolio5.jpg   450w,
+                      ./images/x2/portfolio5x2.jpg 900w,
+                      ./images/x1/portfolio5.jpg   354w,
+                      ./images/x2/portfolio5x2.jpg 708w,
+                      ./images/x1/portfolio5.jpg   270w,
+                      ./images/x2/portfolio5x2.jpg 540w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    class="card-image"
+                    src="./images/x1/portfolio5.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <div class="portfolio__item">
-                  <h3 class="portfolio__title">Проект Boxes</h3>
-                  <p class="portfolio__text">Приложение</p>
+                <div class="item-list">
+                  <h2>Проект Boxes</h2>
+                  <p>Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__card">
-              <a href="" class="portfolio__link">
+            <li class="portfolio-card">
+              <a href="#" class="portfolio-card__img">
                 <div class="box">
                   <div class="overlay">
                     <p>
@@ -283,16 +366,31 @@
                       лице.
                     </p>
                   </div>
-                  <img src="./images/x1/portfolio6.jpg" alt="зображення" class="portfolio__img" />
+                  <img
+                    srcset="
+                      ./images/x1/portfolio6.jpg   450w,
+                      ./images/x2/portfolio6x2.jpg 900w,
+                      ./images/x1/portfolio6.jpg   354w,
+                      ./images/x2/portfolio6x2.jpg 708w,
+                      ./images/x1/portfolio6.jpg   270w,
+                      ./images/x2/portfolio6x2.jpg 540w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    class="card-image"
+                    src="./images/x1/portfolio6.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <div class="portfolio__item">
-                  <h3 class="portfolio__title">Inspiration has no Borders</h3>
-                  <p class="portfolio__text">Веб-сайт</p>
+                <div class="item-list">
+                  <h2>Inspiration has no Borders</h2>
+                  <p>Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__card">
-              <a href="" class="portfolio__link">
+            <li class="portfolio-card">
+              <a href="#" class="portfolio-card__img">
                 <div class="box">
                   <div class="overlay">
                     <p>
@@ -302,16 +400,31 @@
                       лице.
                     </p>
                   </div>
-                  <img src="./images/x1/portfolio7.jpg" alt="зображення" class="portfolio__img" />
+                  <img
+                    srcset="
+                      ./images/x1/portfolio7.jpg   450w,
+                      ./images/x2/portfolio7x2.jpg 900w,
+                      ./images/x1/portfolio7.jpg   354w,
+                      ./images/x2/portfolio7x2.jpg 708w,
+                      ./images/x1/portfolio7.jpg   270w,
+                      ./images/x2/portfolio7x2.jpg 540w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    class="card-image"
+                    src="./images/x1/portfolio7.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <div class="portfolio__item">
-                  <h3 class="portfolio__title">Издание Limited Edition</h3>
-                  <p class="portfolio__text">Дизайн</p>
+                <div class="item-list">
+                  <h2>Издание Limited Edition</h2>
+                  <p>Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__card">
-              <a href="" class="portfolio__link">
+            <li class="portfolio-card">
+              <a href="#" class="portfolio-card__img">
                 <div class="box">
                   <div class="overlay">
                     <p>
@@ -321,16 +434,31 @@
                       лице.
                     </p>
                   </div>
-                  <img src="./images/x1/portfolio8.jpg" alt="зображення" class="portfolio__img" />
+                  <img
+                    srcset="
+                      ./images/x1/portfolio8.jpg   450w,
+                      ./images/x2/portfolio8x2.jpg 900w,
+                      ./images/x1/portfolio8.jpg   354w,
+                      ./images/x2/portfolio8x2.jpg 708w,
+                      ./images/x1/portfolio8.jpg   270w,
+                      ./images/x2/portfolio8x2.jpg 540w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    class="card-image"
+                    src="./images/x1/portfolio8.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <div class="portfolio__item">
-                  <h3 class="portfolio__title">Проект LAB</h3>
-                  <p class="portfolio__text">Маркетинг</p>
+                <div class="item-list">
+                  <h2>Проект LAB</h2>
+                  <p>Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio__card">
-              <a href="" class="portfolio__link">
+            <li class="portfolio-card">
+              <a href="#" class="portfolio-card__img">
                 <div class="box">
                   <div class="overlay">
                     <p>
@@ -340,11 +468,26 @@
                       лице.
                     </p>
                   </div>
-                  <img src="./images/x1/portfolio9.jpg" alt="зображення" class="portfolio__img" />
+                  <img
+                    srcset="
+                      ./images/x1/portfolio9.jpg   450w,
+                      ./images/x2/portfolio9x2.jpg 900w,
+                      ./images/x1/portfolio9.jpg   354w,
+                      ./images/x2/portfolio9x2.jpg 708w,
+                      ./images/x1/portfolio9.jpg   270w,
+                      ./images/x2/portfolio9x2.jpg 540w
+                    "
+                    sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+                    class="card-image"
+                    src="./images/x1/portfolio9.jpg"
+                    alt=""
+                    width="370"
+                    height="294"
+                  />
                 </div>
-                <div class="portfolio__item">
-                  <h3 class="portfolio__title">Growing Business</h3>
-                  <p class="portfolio__text">Приложение</p>
+                <div class="item-list">
+                  <h2>Growing Business</h2>
+                  <p>Приложение</p>
                 </div>
               </a>
             </li>
@@ -352,7 +495,7 @@
         </div>
       </section>
     </main>
-<footer class="footer">
+    <footer class="footer">
       <div class="container">
         <ul class="footer__wrapper">
           <li class="footer__address footer__item logo">
@@ -381,7 +524,9 @@
             </address>
           </li>
           <li class="footer__social footer__item">
-            <span class="footer__title footer__title--left">ПРИСОЕДИНЯЙТЕСЬ</span>
+            <span class="footer__title footer__title--left"
+              >ПРИСОЕДИНЯЙТЕСЬ</span
+            >
             <ul class="footer__social--circle">
               <li class="footer__soc">
                 <a href="#" class="footer__link">

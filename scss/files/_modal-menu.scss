@@ -1,18 +1,32 @@
 @media (max-width:480px) {
     .nav-modal {
-        display: none;
+        
         &__close {
-            margin: 48px auto 0 40px;
-            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            padding: 32px;
+            background-color: var(--white-color);
+            z-index: 999;
+        
+            transform: translateX(100%);
+            transition: transform 250ms ease-in-out;
         }
+
+        &__close.is-open {
+            transform: translateX(0);
+        }
+
         &__items {
             font-family: 'Roboto';
-            font-size: 40px;
+            font-size: 35px;
             font-weight: 500;
-            line-height: 47px;
+            line-height: 40px;
         }
         &__item:not(:last-child) {
-            padding-bottom: 32px;
+            padding-bottom: 25px;
         }
         &__link {
             color: var(--black-grey-color);
@@ -41,35 +55,59 @@
         }
     }
     .address-modal {
+        padding-top: 260px;
         &__mailo-phon {
-
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 28px;
+            
+            &:focus,
+            &:hover {
+                font-size: 34px;
+                font-weight: 500;
+                line-height: 40px;
+                color: var(--btn-color);
+            }
+            &:not(:last-child) {
+                padding-bottom: 30px;
+            }
         }
         &__link {
-                
+            color: var(--grey-color);
+            &:hover,
+            &:focus {
+                color: var(--btn-color);
+            }
         }
     }
-    .socials-modal__container {
-        position: absolute;
-        left: 50px;
-        bottom: 48px;
-    }
+    
     .socials-modal {
-        left: 40px;
-        bottom: 48px;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+
+        &__container {
+            padding: 164px 84px 48px 0;
+            
+        }
+        
     }
     .social-modal {
-        position: absolute;
-        left: 40px;
-        bottom: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
+        &__container {
+
+        }
+
+        &__link {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 22px;
+            color: var(--btn-color);
+        }
+        
         &__separate {
-            padding: 0 10px 0 10px;
-            color: var(--black-grey-color);
+            font-size: 22px;
+           color: rgba(33, 33, 33, 0.2);
         }
     }
 }
